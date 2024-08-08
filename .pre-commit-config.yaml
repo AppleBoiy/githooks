@@ -1,0 +1,17 @@
+repos:
+-   repo: local
+    hooks:
+    -   id: commit-msg
+        name: commit-msg
+        language: system
+        entry: hooks/commit-msg
+
+    -   id: pre-commit
+        name: pre-commit
+        language: system
+        entry: hooks/pre-commit
+
+    -   id: post-merge
+        name: post-merge
+        language: system
+        entry: hooks/post-merge
