@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Notify about a successful merge
+echo "Running post-merge hook..."
+echo "Merge completed successfully!"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Run a simple linter (e.g., shellcheck for shell scripts)
+echo "Running pre-commit hook..."
+if ! command -v shellcheck &> /dev/null; then
+  echo "shellcheck not found, skipping linting."
+else
+  shellcheck **/*.sh
+fi
